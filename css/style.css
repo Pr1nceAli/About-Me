@@ -1,6 +1,6 @@
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #0f0f0f;
@@ -9,8 +9,13 @@
     }
 
     header {
+        padding-right: 50px;
       height: 80px;
       z-index: 1000;
+    }
+
+    header h1 {
+      padding-top:40px;
     }
 
     #menu-overlay {
