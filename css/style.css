@@ -9,12 +9,9 @@
     }
 
     header {
-      padding-left: 0px;
-      height: 80px;
+      height: 5rem;
       z-index: 1000;
     }
-    
-    
 
     header h1 {
       margin: 0;
@@ -23,13 +20,8 @@
       align-items: center;
     }
 
-    button,.btn {
-      box-shadow: 0 0 10px rgba(249, 249, 249, 0.3);
-      transition: box-shadow 0.3s ease;
-    }
-
-    button:hover,.btn:hover {
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    button:hover,.dropdown-item:hover {
+      box-shadow: 0 0 1.25rem rgb(48, 46, 46);
     }
 
     section.hero {
@@ -40,13 +32,30 @@
       text-align: center;
     }
 
+    .welcometext {
+      font-size: 1.5rem;
+      color: #919191;
+      margin-top: .625rem;
+    }
+
+    .aboutme {
+      font-size: 2.5rem;
+      color: #c5c5c5;
+      margin-top: 1.25rem;
+    }
     section.projects {
-      padding: 80px 0;
+      padding: 5rem;
+    }
+
+    .projectsecondary {
+      font-size: 1.2rem;
+      color: #c7c5c5;
+      margin-bottom: 1.25rem;
     }
 
     .project-link {
       display: block;
-      border-radius: 10px;
+      border-radius: .625rem;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -58,20 +67,20 @@
 
     .project-link:hover {
       transform: scale(1.02);
-      box-shadow: 0 15px 30px #a6a6a6fd, 0 0 30px rgba(0, 0, 0, 0.993);
+      box-shadow: 0 .938rem 1.875rem #a6a6a6fd, 0 0 1.875rem rgba(0, 0, 0, 0.993);
     }
 
     .project-card {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      min-height: 350px;
+      min-height: 21.875rem;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       position: relative;
       border: none;
-      border-radius: 10px;
+      border-radius: .625rem;
       z-index: 1;
     }
 
@@ -84,8 +93,8 @@
     }
     .project-image {
       width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      border-radius: .5rem;
+      box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.4);
       transition: transform 0.3s ease;
     }
     
@@ -121,7 +130,7 @@
   }
 
     footer {
-      padding-bottom: 10px;
+      padding-bottom: .625rem;
       text-align: center;
       font-size: 0.875rem;
       color: #fefefe;
