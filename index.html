@@ -7,34 +7,35 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="bg-black text-white">
 
-  
+<body class="bg-black text-white">
+  <div id="ambient-lighting"></div>
+  <!-- HEADER SECTION  -->
   <header class="position-fixed top-0 w-100 px-4 py-3 d-flex justify-content-between align-items-center z-3">
     <h1 class="fs-4 m-0">
-        <img src="assets\images\IconResize.png" class="img-fluid mb-3 project-image" alt="Shounen Sprint Screenshot" />
+         <img src="assets\images\Initials.png" class="Name-image" alt="NamePlate" />
     </h1>
-    <button id="menu-toggle" class="btn btn-outline-light">Menu</button>
+    <!-- MENU SECTION  -->
+    <div class="dropdown">
+      <button class="btn btn-outline-light dropdown-toggle" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false"> Menu 
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="menuDropdown">
+        <li><a class="dropdown-item text-white" href="assets/Docs/Resume.pdf" target="_blank">Resume</a></li>
+        <li><a class="dropdown-item text-white" href="https://www.linkedin.com/in/badraly" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    
   </header>
-
-   
-  <div id="menu-overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark d-none flex-column justify-content-center align-items-center text-white">
-    <a href="index.html" class="fs-2 my-2">Home</a>
-    <a href="projects.html" class="fs-2 my-2">Projects</a>
-    <a href="about.html" class="fs-2 my-2">About</a>
-    <a href="contact.html" class="fs-2 my-2">Contact</a>
-  </div>
-
- 
+  <!-- WELCOME SECTION -->
   <section class="vh-100 d-flex justify-content-center align-items-center">
     <div>
       <h1 class="display-3 fw-bold">Welcome to Aly's Portfolio!</h1>
       <p class="lead text-muted text-center" style = "font-size: 30px">Built from scratch for you to get to know me better!</p>
+      <img src="assets\images\Logo.png" class="project-image" alt="Logo" />
     </div>
   </section>
-
-
-   
+   <!-- ABOUT ME SECTION -->
   <section id="about" class="container py-5">
     <h2 class="fw-bold text-center mb-4">About Me</h2>
     <p class="text-secondary text-center" style = "font-size: 40px"> Detail-oriented Software Engineer with a strong foundation in computer science principles, including object-oriented 
@@ -42,75 +43,73 @@
                                         services, RESTful APIs, and full-stack applications using Java, Python, and JavaScript. When I'm not sitting at my desk I love to hang out with my dog Hugo[Pictured to the right]
                                         work on cars, go on hikes, take care of my bonsai tress, and hangout with family and friends.</p>
   </section>
+  <!-- PROJECT SECTION -->
   <section id="projects" class="projects container">
-  <div class="text-center mb-5">
-    <h2 class="fw-bold">Projects</h2>
-    <p class="text-secondary">Some recent work examples</p>
-  </div>
-  <div class="row g-4">
-    
-    <div class="col-md-4">
-      <a id="link1" href="https://pr1nceali.github.io/Shonen-Sprint/" target="_blank" class="project-link color-black text-decoration-none">
-        <div id="project1" class="card project-card p-4">
-          <img src="assets\images\shonen.png" class="img-fluid mb-3 project-image" alt="Shounen Sprint Screenshot" />
-          <h5 class="text-black">Project One: Shonen-Sprint </h5>
-          <p class="text-black">A fast-paced, anime-inspired multi-level runner game where players navigate iconic environments and dodge obstacles while escaping from iconic anime villians.</p>
-        </div>
-      </a>
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Projects</h2>
+      <p class="text-secondary">Some recent work examples</p>
     </div>
-
-    
-    <div class="col-md-4">
-      <a href="https://github.com/Pr1nceAli/Vehicle-Vault" target="_blank" class="project-link text-decoration-none">
-        <div id="project2" class="card project-card p-4">
-          <img src="assets\images\vv.png" class="img-fluid mb-3 project-image" alt="Shounen Sprint Screenshot" />
-          <h5 class="text-black">Vehicle Vault</h5>
-          <p class="text-black">This project is a web application that connects to a database containing a variety of cars. Users can search for vehicles, view brands, see car models, and get detailed information on specific models. Additionally, users can update model information, create new models, and manage their collections including a garage, an all-time garage, and a wishlist.</p>
-        </div>
-      </a>
+    <!-- PROJECT #1 -->
+    <div class="row g-4">
+      <div class="col-md-4">
+        <a id="link1" href="https://pr1nceali.github.io/Shonen-Sprint/" target="_blank" class="project-link color-black text-decoration-none">
+          <div id="project1" class="card project-card p-4">
+            <img src="assets\images\shonen.png" class="img-fluid mb-3 project-image" alt="Shounen Sprint Screenshot" />
+            <h5 class="text-black">Project #1: Shonen-Sprint </h5>
+            <p class="text-black">A fast-paced, anime-inspired multi-level runner game where players navigate iconic environments and dodge obstacles while escaping from iconic anime villians.</p>
+          </div>
+        </a>
+      </div>
+      <!-- PROJECT #2 -->
+      <div class="col-md-4">
+        <a href="https://github.com/Pr1nceAli/Vehicle-Vault" target="_blank" class="project-link text-decoration-none">
+          <div id="project2" class="card project-card p-4">
+            <img src="assets\images\vv.png" class="img-fluid mb-3 project-image" alt="Vehicle-Vault Screenshot" />
+            <h5 class="text-black">Project #2: Vehicle Vault</h5>
+            <p class="text-black">This project is a web application that connects to a database containing a variety 
+              of cars. Users can search for vehicles, view brands, see car models, and get detailed information on 
+              specific models. Additionally, users can update model information, create new models, and manage their collections 
+              including a garage, an all-time garage, and a wishlist.</p>
+          </div>
+        </a>
+      </div>
+      <!-- PROJECT #3 -->
+      <div class="col-md-4">
+        <a href="https://github.com/johan253/dungeon-adventure" target="_blank" class="project-link text-decoration-none">
+          <div id="project3" class="card project-card p-4">
+            <img src="assets\images\Dungeon.png" class="img-fluid mb-3 project-image" alt="Dungeon Adventure" />
+            <h5 class="text-black">Project #3: Dungeon Adventure</h5>
+            <p class="text-black">An immersive labyrinth-style game built with Python and Pygame, 
+              where players explore hidden maps, battle monsters, and uncover treasures. Designed 
+              with efficient algorithms, design patterns, and a user-friendly GUI to ensure engaging 
+              gameplay and smooth performance. </p>
+          </div>
+        </a>
+      </div>
     </div>
-
-    
-    <div class="col-md-4">
-      <a href="https://github.com/yourusername/project3" target="_blank" class="project-link text-decoration-none">
-        <div id="project3" class="card project-card p-4">
-          <h5 class="text-black">Project Three</h5>
-          <p class="text-black">Brief description </p>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-  
-
-   
-  <section id="contact" class="container py-5">
-    <h2 class="fw-bold text-center mb-4">Contact</h2>
-    <form class="mx-auto" style="max-width: 600px;">
-      <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Your Name" required>
-      </div>
-      <div class="mb-3">
-        <input type="email" class="form-control" placeholder="Your Email" required>
-      </div>
-      <div class="mb-3">
-        <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary w-100">Send</button>
-    </form>
   </section>
-
-   
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="container py-5">
+      <h2 class="fw-bold text-center mb-4">Contact</h2>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send</button>
+      </form>
+  </section>
+  <!-- FOOTER SECTION -->
   <footer>
     <p>&copy; 2025 Aly Badr. All rights reserved.</p>
   </footer>
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
